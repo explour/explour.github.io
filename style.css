@@ -121,6 +121,7 @@ input::-webkit-input-placeholder {
   display: none;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 #exit-button {
   position: absolute;
