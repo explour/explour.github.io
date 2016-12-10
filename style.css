@@ -117,11 +117,15 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 50px 0px;
+  padding: 0px 0px 50px 0px;
   display: none;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   box-sizing: border-box;
+  align-self: center;
+  justify-content: space-between;
+
 }
 #exit-button {
   position: absolute;
@@ -130,6 +134,18 @@ input::-webkit-input-placeholder {
 }
 #exit-button:hover {
   cursor: pointer;
+}
+.pop-up-wrapper h1.archive-heading {
+  font-size: 14px;
+  letter-spacing: 0.6em;
+  padding-left: 0.6em;
+  color: #ccc;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+.pop-up-heading {
+  height: 50px;
 }
 @media (max-width: 575px) {
   .pop-up-wrapper {
@@ -140,4 +156,27 @@ input::-webkit-input-placeholder {
     top: 25px;
     right: 25px;
   }
+}
+.archive-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.collection-container {
+  width: 550px;
+  overflow: auto;
+}
+.hidden-container {
+  display: none;
+  float: left;
+}
+.pop-up-wrapper div.container {
+  float: left;
+}
+.pop-up-wrapper img.arrow {
+  margin: 25px;
+  display: block;
+}
+.pop-up-wrapper img.arrow:hover {
+  cursor: pointer;
 }
