@@ -135,6 +135,9 @@ input::-webkit-input-placeholder {
 #exit-button:hover {
   cursor: pointer;
 }
+img#back-arrow {
+  opacity: 0;
+}
 .pop-up-wrapper h1.archive-heading {
   font-size: 14px;
   letter-spacing: 0.6em;
