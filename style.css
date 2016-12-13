@@ -83,9 +83,9 @@ p a:hover {
 }
 hr {
   display: block;
-  border-bottom: 1px solid;
-  color: #fff;
-  border-color: #f5f5f5;
+  height: 1px;
+  border: none;
+  background-color: #f5f5f5;
   margin: 25px 0px;
 }
 p.center {
@@ -137,14 +137,9 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 0px 0px 50px 0px;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  align-self: center;
-  justify-content: space-between;
+  align-items: center;
 }
 #exit-button {
   position: absolute;
@@ -157,6 +152,9 @@ input::-webkit-input-placeholder {
 img#back-arrow {
   opacity: 0;
 }
+div.pop-up-heading {
+  height: 50px;
+}
 .pop-up-wrapper h1.archive-heading {
   font-size: 14px;
   letter-spacing: 0.6em;
@@ -165,9 +163,12 @@ img#back-arrow {
   margin: 0;
   line-height: 50px;
   text-align: center;
+  flex-basis: 0;
 }
-.pop-up-heading {
-  height: 50px;
+.archive-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 .archive-container {
   display: flex;
