@@ -143,8 +143,8 @@ input::-webkit-input-placeholder {
 }
 #exit-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 #exit-button:hover {
   cursor: pointer;
@@ -176,7 +176,9 @@ div.pop-up-heading {
   align-items: center;
 }
 .collection-container {
-  width: 550px;
+  max-width: 550px;
+  width: 95%;
+  margin: 0 auto;
   overflow: auto;
 }
 .hidden-container {
@@ -199,7 +201,12 @@ div.pop-up-heading {
     padding: 2.5%;
   }
   #exit-button {
-    top: 25px;
-    right: 25px;
+    width: 25px;
+    height: 25px;
+    top: 18px;
+    right: 5%;
+  }
+  .pop-up-wrapper img.arrow {
+    display: none;
   }
 }

@@ -26,6 +26,13 @@ $(document).ready(function() {
     moveBack();
   });
 
+  $(".focus-container").on("swipeleft", function() {
+    moveForward();
+  })
+  $(".focus-container").on("swiperight", function() {
+    moveBack();
+  })
+
   function moveForward() {
     $(".focus-container").next().addClass("focus-container");
     $(".focus-container").next().removeClass("hidden-container");
