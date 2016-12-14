@@ -5,6 +5,12 @@ $(document).ready(function() {
 
   $('#sneak-peak-button').click(function(){
     $('.pop-up-wrapper').css("display", "flex");
+    $('.card-container').removeClass("focus-container");
+    $('.card-container').addClass("hidden-container");
+    $('.card-container').first().addClass("focus-container");
+    $('.card-container').first().removeClass("hidden-container");
+    $('#back-arrow').css("opacity", "0");
+    $('#front-arrow').css("opacity", "1");
   });
 
   $('html').keydown(function(e){
