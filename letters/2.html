@@ -2,7 +2,7 @@
   <head>
     <title>arrive home</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
   <body>
     <div class = "wrapper">
       <div class = "container">
-        <img id = "logo" src = "images/logo.svg" />
+        <img id = "logo" src = "../images/logo.svg" />
         <blockquote>
           <p><em>&quot;When you look around your home, notice how each room and each piece of furniture in each room creates a certain feeling. Our built environment affects how we live and how we interact and are connected to others. So where we put things, what colors we paint, and the way we design our space should have intention.&quot;</em></p>
           <p>&dash; <strong>Thich Nhat Hanh</strong> in <em>Making Space</em></p>
@@ -69,18 +69,18 @@
 
     <div class = "pop-up-wrapper">
       <div class = "pop-up-heading">
-        <img id = "exit-button" src = "images/x.svg">
+        <img id = "exit-button" src = "../images/x.svg">
         <h1 class = "archive-heading">ARCHIVE</h1>
       </div>
 
       <div class = "archive-wrapper">
       <div class = "archive-container">
-      <img id = "back-arrow" class = "arrow" src = "images/back-arrow.svg">
+      <img id = "back-arrow" class = "arrow" src = "../images/back-arrow.svg">
 
       <div class = "collection-container">
-      <div class = "container card-container focus-container">
-        <img class = "card-background" src = "images/letter-1-bg.jpg" />
-        <img id = "logo" src = "images/logo.svg" />
+      <div class = "container card-container hidden-container">
+        <img class = "card-background" src = "../images/letter-1-bg.jpg" />
+        <img id = "logo" src = "../images/logo.svg" />
         <blockquote>
           <p><em>&ldquo;You can look at your home [as having a particular intention.] You&rsquo;re not setting it up for people to photograph, or for a magazine, but for yourself and your friends and family. It&rsquo;s a space for human beings.&rdquo;</em></p>
           <p>&dash; <strong>Thich Nhat Hanh</strong> in <em>Making Space</em></p>
@@ -100,11 +100,11 @@
           <p><em>Don't decorate for other people.</em> For all those decorative adornments, unless they have a meaning for you or make your feel happy (then the brightly colored pillows or lively green plant serve a wonderful purpose), don&rsquo;t put something there just to fill the space or because it&rsquo;s trendy to do so.</p>
         </div>
 
-        <h2>DECEMBER 2016 &dash; LETTER #1</h2>
+        <h2>LETTER #1</h2>
       </div>
-      <div class = "container card-container hidden-container">
-        <img class = "card-background" src = "images/letter-2-bg.jpg" />
-        <img id = "logo" src = "images/logo.svg" />
+      <div class = "container card-container focus-container">
+        <img class = "card-background" src = "../images/letter-2-bg.jpg" />
+        <img id = "logo" src = "../images/logo.svg" />
           <blockquote>
             <p><em>&rdquo;If you want a golden rule that will fit everything, this is it: Have nothing in your houses that you do not know to be useful, or believe to be beautiful.&rdquo;</em></p>
             <p>&dash; <strong>William Morris</strong></p>
@@ -118,12 +118,12 @@
             <p>Think about it this way: when you welcome someone in your space like this, it should make you feel just a bit vulnerable. It&rsquo;s the same wonderful feeling you feel when you first let down your guard with a new friend, and letting that quirky, imperfect side of you out. That&rsquo;s the mark of a beautiful space.</p>
           </div>
 
-          <h2>DECEMBER 2016 &dash; LETTER #2</h2>
+          <h2>LETTER #2</h2>
       </div>
 
       <div class = "container card-container hidden-container">
-        <img class = "card-background" src = "images/letter-3-bg.jpg" />
-        <img id = "logo" src = "images/logo.svg" />
+        <img class = "card-background" src = "../images/letter-3-bg.jpg" />
+        <img id = "logo" src = "../images/logo.svg" />
         <blockquote>
           <p></em>&ldquo;For many everyday tasks, goals and intentions are not well-specified: they are opportunistic rather than planned. Opportunistic actions are those in which the behavior takes advantage of circumstances.&rdquo;</em></p>
           <p>&ndash; <strong>Don Norman</strong> in <em>The Design of Everyday Things</em></p>
@@ -137,18 +137,21 @@
           <p>When we decide to place that book on our nightstands and exile our phones from the bedroom, we nudge ourselves to spend those 30 minutes before bedtime reading instead of on the phone. When we create that dedicated space to breathe, we remind ourselves to sit and meditate in the morning.</p>
           <p>The space we create for future selves dictates that kind of people we want to become. <em>What kind of person do you want to become? What kind of space should you therefore create?</em></p>
         </div>
-        <h2>DECEMBER 2016 &dash; LETTER #3</h2>
+        <h2>LETTER #3</h2>
       </div>
 
       </div>
-      <img id = "front-arrow" class = "arrow" src = "images/arrow.svg">
-
+      <img id = "front-arrow" class = "arrow" src = "../images/arrow.svg">
     </div>
     </div>
 
 
 
     </div>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
+    <script>
+      $('.pop-up-wrapper').css("display", "flex");
+      $('#back-arrow').css("opacity", "1");
+    </script>
   </body>
 </html>

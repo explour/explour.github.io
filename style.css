@@ -143,7 +143,7 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: none;
+  display: none ;
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
@@ -201,6 +201,12 @@ div.pop-up-heading {
 }
 .pop-up-wrapper img.arrow:hover {
   cursor: pointer;
+}
+.card-container img.card-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
 }
 @media (max-width: 725px) {
   .pop-up-wrapper {

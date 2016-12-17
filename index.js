@@ -3,6 +3,10 @@ $(document).ready(function() {
     $('.pop-up-wrapper').hide();
   });
 
+  $('.card-container').hover(function() {
+    $('img.card-background').toggle();
+  });
+
   $('#sneak-peak-button').click(function(){
     $('.pop-up-wrapper').css("display", "flex");
     $('.card-container').removeClass("focus-container");
